@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class PrimeCheck {
+	//function to check if input int is prime
 	static boolean checkPrime(int num) {
 		boolean flag = false;
 		
@@ -16,7 +17,7 @@ public class PrimeCheck {
 		else
 			return false;
 	}
-	
+	//function to list factors if input int is not prime
 	static void findFactors(int num) {
 		System.out.println(num + " is not prime.");
 		System.out.print("The factors of " + num + " are: ");
@@ -34,7 +35,7 @@ public class PrimeCheck {
 		System.out.println("Enter an integer: ");
 		number = in.nextInt();
 		
-		if(checkPrime(number) == true)
+		if(checkPrime(number) == true) 
 			System.out.println(number + " is prime.");
 		else
 			findFactors(number);
